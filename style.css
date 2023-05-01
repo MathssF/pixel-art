@@ -1,0 +1,74 @@
+.pixel{
+    border: 1px solid black;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    
+
+}
+
+.p_vazio{
+    background-color: white;
+}
+
+.color{
+
+    border: 1px solid black;
+    /*border-color: black; */
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: -1px;
+
+}
+
+.i_azul{
+    background-color: rgb(7, 97, 199);
+
+}
+
+.i_vermelho{
+    background-color: red;
+
+
+}
+
+.i_amarelo{
+    background-color: yellow;
+
+
+}
+
+.i_verde{
+    background-color: green;
+
+
+}
+
+.i_preto{
+    background-color: black;
+
+
+}
+
+.i_cinza{
+    background-color: gray;
+
+
+}
+
+.i_lilas{
+    background-color: purple;
+
+
+}
+
+.Limpar{
+    background-color: gray;
+    margin: solid black;
+    border: 1px solid rgb(29, 25, 25);
+    border-radius: 15%;
+    padding: 25px;
+    
+
+}
