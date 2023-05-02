@@ -6,6 +6,7 @@ Obs: Mudando o "Selected"
 */
 let id_color = document.getElementById("color-palette").children;
 let id_pixels = document.getElementById("pixel-board").children;
+const board = document.getElementById('pixel-board');
 const c_black = document.querySelectorAll('.color')[0];
 const c_blue = document.querySelectorAll('.color')[1];
 const c_red = document.querySelectorAll('.color')[2];
@@ -20,6 +21,17 @@ for(let au=0; au<id_color.length; au+=1){
         evento1.target.classList.add('selected');
     });
 }
+// Criando a Tabela
+for (let i = 0; i < 5; i++) {
+    const row = document.createElement('div');
+    row.classList.add('row');
+    for (let j = 0; j < 5; j++) {
+      const cell = document.createElement('div');
+      cell.classList.add('pixel', 'p_vazio');
+      row.appendChild(cell);
+    }
+    board.appendChild(row);
+  }
 function pintar(){
     // Ela seleciona o pixel
     // tira toda a classe da div e adiciona pixel + i_cor
